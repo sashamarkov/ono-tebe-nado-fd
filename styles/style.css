@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
  /*Умолчания.*/
-.body{
+.body {
   font-size: 18px; 
   font-weight: 400;
   color: #000;
@@ -15,7 +15,7 @@
   align-items: center;
   
   line-height: 1.3889em;
-  padding: 92px 50px 96px 50px; 
+  padding: 92px 50px 96px 50px;
 }
 
 /*Контейнер навигации.*/
@@ -76,7 +76,7 @@
     flex-direction: column;
     gap: 0.06em;
     max-width: 240px;
-
+    
     font-style: normal; 
     line-height: 1.315em; /*Миллиметрия pixel perfect*/
 }
@@ -110,7 +110,7 @@
 }
 
 /*Полупрозрачный блок поверх секции.*/
-.overlay{
+.overlay {
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -145,34 +145,34 @@
 }
 
 /*Текст подзаголовка*/
-.cover__description-text{
+.cover__description-text {
   word-spacing: 0.84em;
   padding-top: 13px;
 }
 
 /*Классы для выравнивания строк текста и превращения их в блочный элемент.*/
 /*-----------------------------------------------------------------------*/
-.aligned-text{
+.aligned-text {
   text-transform: inherit;
 }
 
-.aligned-text_center{
+.aligned-text_center {
   text-align: center;
 
   padding-left: 30px;
 }
 
-.aligned-text_right{
+.aligned-text_right {
   text-align: right;
 }
 /*-----------------------------------------------------------------------*/
 
 /*Класс для обнуления общего межбуквенного расстояния у последней буквы.*/
-.no-letter-spacing{
+.no-letter-spacing {
   letter-spacing: 0;
 }
 
-.bet-button{
+.bet-button {
   color: inherit;
   text-transform: inherit;
   background: transparent;
@@ -181,7 +181,7 @@
 }
 
 /*Вся секция с карточками.*/
-.lots{
+.lots {
   padding: 180px 24px 0px 24px;
 }
 
@@ -364,7 +364,7 @@
 
 /*Ссылка меню.*/
 .footer__menu-link {
-  text-underline-offset: 0.22em; 
+  text-underline-offset: 0.22em;
 }
 
 /*Активная ссылка меню (без подчёркивания).*/
@@ -380,7 +380,7 @@
 }
 
 /*Пункт списка ссылок на социальные сети.*/
-.footer__social-list-item { 
+.footer__social-list-item {
   list-style: none;
 }
 
