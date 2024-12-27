@@ -8,7 +8,7 @@
   font-size: 18px;
 }
 
- /*Шапка */
+ /*Шапка*/
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -156,7 +156,6 @@
 }
 
 .aligned-text_center {
-
   padding-left: 30px;
   text-align: center;
 }
