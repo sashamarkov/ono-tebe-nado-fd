@@ -2,7 +2,6 @@
 
  /*Умолчания.*/
 .body {
-  box-sizing: border-box;
   color: #000; 
   font-weight: 400;
   font-size: 18px;
@@ -14,7 +13,6 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px 50px;
-  
   line-height: 1.3889em;
 }
 
@@ -26,7 +24,6 @@
 /*Список ссылок.*/
 .header__links-list {
   display: flex;
-  flex-direction: row;
   gap: 1.8252em; /*Миллиметрия pixel perfect*/
 }
 
@@ -72,12 +69,12 @@
 
 /*Контейнер с адресом.*/
 .address {
-    display: flex;
-    flex-direction: column;
-    gap: 0.06em;
-    max-width: 240px;
-    font-style: normal;
-    line-height: 1.315em; /*Миллиметрия pixel perfect*/
+  display: flex;
+  flex-direction: column;
+  gap: 0.06em;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 1.315em; /*Миллиметрия pixel perfect*/
 }
 
 /*Часть адреса в виде ссылки.*/
@@ -95,13 +92,12 @@
 .cover {
   position: relative;
   z-index: 0;
-  min-height: 757px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   padding: 165px 50px 50px 50px;
   color: #fff;
-
   text-transform: uppercase;
-
   background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -122,8 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.2em;
-  font-weight: bold;
-  
+  font-weight: bold; 
   font-size: 100px;
   line-height: 1.15em;
   letter-spacing: 0.3em;
@@ -135,10 +130,8 @@
   display: flex;
   flex-direction: row;
   gap: 4.8636em;
-
   padding-top: 106px;
   font-weight: 400;
-
   font-size: 22px;
   text-transform: uppercase;
 }
@@ -197,7 +190,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 1.3889em;
-  
   color: #fff;
 }
 
@@ -212,42 +204,34 @@
   text-decoration: none;
 }
 
+/*Для определения фона каждой из карточек.*/
+/*-----------------------------------------------------------------------*/
+.card_type_film {
+  background: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg);
+}
+/*-----------------------------------------------------------------------*/
+
 /*Карточка.*/
 .card {
   position: relative;
   z-index: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  
   padding: 48px 40px;
-}
-
-/*Для определения фона каждой из карточек по id.*/
-/*-----------------------------------------------------------------------*/
-#card_type_film {
-  background: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
-#card_type_book {
-  background: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#card_type_picture {
-  background: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/*-----------------------------------------------------------------------*/
 
 /*Заголовок карточки.*/
 .card__title {
@@ -267,22 +251,18 @@
 /*Ссылка «Посмотреть больше».*/
 .lots__look-more-link {
   display: block;
-
   padding: 30px 0 0 40px;
-
   font-size: 20px;
   text-decoration-skip-ink: none;
   text-underline-offset: 0.22em;
 }
 
-/*Вся секции с информацией об аукционе.*/
+/*Вся секция с информацией об аукционе.*/
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
   grid-template-rows: auto;
   gap: 1.3888em;
-  min-height: 596px;
-
   padding: 120px 24px 180px 24px;
 }
 
@@ -292,7 +272,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  
   padding-top: 35px;
 }
 
@@ -301,7 +280,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -316,10 +294,8 @@
 /*Заголовок секции.*/
 .about__title {
   align-self: start;
-
   padding: 100px 0 100px 0;
   font-weight: 700;
-
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -331,7 +307,6 @@
   gap: 1.2em;
   align-self: start;
   font-weight: 400;
-
   font-size: 20px;
   white-space: pre-line; /*Перенос текста как он есть в HTML*/
 }
