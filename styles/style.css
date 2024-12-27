@@ -2,10 +2,10 @@
 
  /*Умолчания.*/
 .body {
-  font-size: 18px; 
-  font-weight: 400;
-  color: #000;
   box-sizing: border-box;
+  color: #000; 
+  font-weight: 400;
+  font-size: 18px;
 }
 
  /*Шапка*/
@@ -13,9 +13,9 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  padding: 92px 50px 96px 50px;
   
   line-height: 1.3889em;
-  padding: 92px 50px 96px 50px;
 }
 
 /*Контейнер навигации.*/
@@ -53,8 +53,8 @@
 /*Контейнер логотипа.*/
 .header__logo {
   display: block;
-  align-self: center;
   justify-self: center;
+  align-self: center;
   width: 136px;
   height: 105px;
 }
@@ -96,26 +96,26 @@
 .cover {
   position: relative;
   z-index: 0;
+  min-height: 757px;
+
+  padding: 165px 50px 50px 50px;
+  color: #fff;
+
+  text-transform: uppercase;
 
   background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  padding: 165px 50px 50px 50px;
-  min-height: 757px;
-
-  text-transform: uppercase;
-  color: #fff;
 }
 
 /*Полупрозрачный блок поверх секции.*/
 .overlay {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  background: #000;
+  z-index: -1;
   opacity: 0.6;
+  background: #000;
 }
 
 /*Заголовок.*/
@@ -123,9 +123,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.2em;
+  font-weight: bold;
   
   font-size: 100px;
-  font-weight: bold;
   line-height: 1.15em;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -137,17 +137,17 @@
   flex-direction: row;
   gap: 4.8636em;
 
-  font-size: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-
   padding-top: 106px;
+  font-weight: 400;
+
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 /*Текст подзаголовка*/
 .cover__description-text {
-  word-spacing: 0.84em;
   padding-top: 13px;
+  word-spacing: 0.84em;
 }
 
 /*Классы для выравнивания строк текста и превращения их в блочный элемент.*/
@@ -157,9 +157,9 @@
 }
 
 .aligned-text_center {
-  text-align: center;
 
   padding-left: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
@@ -173,11 +173,11 @@
 }
 
 .bet-button {
+  border: 1px solid #fff;
+  padding: 11px 31px 12px 32px;
   color: inherit;
   text-transform: inherit;
   background: transparent;
-  border: 1px solid #fff;
-  padding: 11px 31px 12px 32px;
 }
 
 /*Вся секция с карточками.*/
@@ -187,11 +187,11 @@
 
 /*Заголовок секции карточек.*/
 .lots__heading {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
 
   padding: 0 0 27px 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 /*Список карточек.*/
@@ -206,8 +206,8 @@
 
 /*Пункт списка карточек.*/
 .lots__card-list-item {
-  list-style: none;
   min-height: 596px;
+  list-style: none;
 }
 
 /*Ссылка, обрамляющая карточку.*/
@@ -223,9 +223,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   
   padding: 48px 40px;
-  height: 100%;
 }
 
 /*Для определения фона каждой из карточек по id.*/
@@ -254,28 +254,28 @@
 
 /*Заголовок карточки.*/
 .card__title {
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   text-decoration: underline;
-  text-transform: uppercase;
   text-underline-offset: 0.1363em;
+  text-transform: uppercase;
 }
 
 /*Текст карточки.*/
 .card__text {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
 }
 
 /*Ссылка «Посмотреть больше».*/
 .lots__look-more-link {
   display: block;
 
-  font-size: 20px;
-  text-underline-offset: 0.22em;
-  text-decoration-skip-ink: none;
-
   padding: 30px 0 0 40px;
+
+  font-size: 20px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.22em;
 }
 
 /*Вся секции с информацией об аукционе.*/
@@ -284,17 +284,17 @@
   grid-template-columns: 334px 1fr;
   grid-template-rows: auto;
   gap: 1.3888em;
+  min-height: 596px;
 
   padding: 120px 24px 180px 24px;
-  min-height: 596px;
 }
 
 /*Класс для колонок.*/
 .about__column {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: start;
+  align-items: center;
   
   padding-top: 35px;
 }
@@ -307,8 +307,8 @@
 
   width: 240px;
   height: 240px;
-  background-color: #000;
   border-radius: 50%;
+  background-color: #000;
 }
 
 /*Изображение логотипа.*/
@@ -320,22 +320,22 @@
 .about__title {
   align-self: start;
 
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-
   padding: 100px 0 100px 0;
+  font-weight: 700;
+
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 /*Блок для текстов (параграфов) секции.*/
-.about__text {
-  align-self: start;  
+.about__text {  
   display: flex;
   flex-direction: column;
   gap: 1.2em;
+  align-self: start;
+  font-weight: 400;
 
   font-size: 20px;
-  font-weight: 400;
   white-space: pre-line; /*Перенос текста как он есть в HTML*/
 }
 
